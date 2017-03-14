@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.js"
+	integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>jQuery RPG</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to training, Kerbonaut!</h1>
+		<div id="characterSelect" class="row reset-show">
+		<div class="col-xs-12 reset-show" id="selectText"><h2>Who are you?</h2></div>
+		</div>
+		<div id="playerZone" class="row reset-hidden hidden">
+		</div>
+		<div id="controlZone" class="row reset-hidden hidden">
+		<button id="attack" class="btn btn-danger btn-lg reset-show">Attack</button><button id="restart" class="btn btn-primary btn-lg reset-hidden hidden">Restart</button>
+		</div>
+		<div class="row reset-hidden hidden end" id="winner"><h2>You have succeeded</h2></div>
+		<div class="row reset-hidden hidden end" id="loser"><h2>You have failed</h2></div>
+		<div id="combatant" class="row reset-hidden hidden"><div class="col-xs-9"></div>
+		</div>
+		<div id="opponentZone" class="row reset-hidden hidden">
+		<div class="col-xs-12"><h2>Choose your opponent</h2></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
