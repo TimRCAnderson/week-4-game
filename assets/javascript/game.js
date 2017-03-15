@@ -112,6 +112,8 @@ $(document).ready(function() {
 
 	function init() //creates and adds divs for characters, with data attached.
 	{
+
+		var imageHeight;
 		for(var i = 0; i < characters.length; i++)
 		{
 			var $protoCharDiv = $("<div>");
